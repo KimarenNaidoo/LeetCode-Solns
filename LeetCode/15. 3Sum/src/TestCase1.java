@@ -1,27 +1,35 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class TestCase1 {
 
-	static List<Integer> threeSum(int[] num){
-		List<Integer> list = new ArrayList<>();
-		
-		if(num.length == 0 || (num.length == 1 && num[0] == 0)) return list;
-		
-		for(int i = 0; i < num.length; i++){
-			for(int j = 0; j < num.length; j++) {
-				for(int k = 0; k < num.length; k++) {
-					if(i != j && i != k && j != k) {
-						if(num[i] + num[j] + num[k] == 0) {
-							list.add(num[i]);
-							list.add(num[j]);
-							list.add(num[k]);
-						}
+	static List<List<Integer>> threeSum(int[] num){
+		Arrays.sort(num);
+		List<List<Integer>> ret = new LinkedList<List<Integer>>();
+		for(int i = 0; i < num.length - 2; i++) {
+			if(i == 0 || (i > 0 && num[i] != num[i-1])) {
+				int low = i + 1;
+				int high = num.length - 1;
+				int sum = 0 - num[i];
+				while(low < high) {
+					if(num[low] + num[high] == sum) {
+						ret.add(Arrays.asList(num[i], num[low], num[high]));
+						while(low < high && num[low] == num[low + 1]); low++;
+						while(low < high && num[high] == num[high - 1]); high--;
+						low++;
+						high--;
+						
+					}else if(num[low] + num[high] > sum) {
+						high--;
+					}else {
+						low++;
 					}
 				}
 			}
 		}
-		return list;
+		return ret;
 	}
 	
 	public static void main(String[] args) {
