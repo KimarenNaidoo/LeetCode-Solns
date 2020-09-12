@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="11. Container With Most Water/src"/>
+	<classpathentry kind="src" path="12. Integer to Roman/src"/>
+	<classpathentry kind="src" path="13. Roman to Integer/src"/>
+	<classpathentry kind="src" path="14. Longest Common Prefix/src"/>
+	<classpathentry kind="src" path="15. 3Sum/src"/>
+	<classpathentry kind="src" path="20. Valid Parentheses/src"/>
+	<classpathentry kind="src" path="21. Merge Two Sorted Lists/src"/>
+	<classpathentry kind="src" path="26. Remove Duplicates from Sorted Array/src"/>
+	<classpathentry kind="src" path="27. Remove Element/src"/>
+	<classpathentry kind="src" path="28. Implement strStr()/src"/>
+	<classpathentry kind="src" path="3. Longest Substring Without Repeating Characters/src"/>
+	<classpathentry kind="src" path="35. Search Insert Position/src"/>
+	<classpathentry kind="src" path="38. Count and Say/src"/>
+	<classpathentry kind="src" path="4. Median of Two Sorted Arrays/src"/>
+	<classpathentry kind="src" path="5. Longest Palindromic Substring/src"/>
+	<classpathentry kind="src" path="6. ZigZag Conversion/src"/>
+	<classpathentry kind="src" path="7. Reverse Integer/src"/>
+	<classpathentry kind="src" path="8. String to Integer (atoi)/src"/>
+	<classpathentry kind="src" path="9. Palindrome Number/src"/>
+	<classpathentry kind="output" path="11. Container With Most Water/bin"/>
+</classpath>
