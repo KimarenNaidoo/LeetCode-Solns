@@ -22,3 +22,7 @@
 - 28.Implement strStr().
 - 35.Search Insert Position.
 - 38.Count and Say.
+- 53.Maximum Subarray.
+- 58.Length of Last Word.
+- 66.Plus One.
+- 67.Add Binary.
