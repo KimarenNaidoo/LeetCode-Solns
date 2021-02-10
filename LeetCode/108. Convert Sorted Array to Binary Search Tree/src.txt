@@ -1,0 +1,17 @@
+ int[] nums;
+    public TreeNode sortedArrayToBST(int[] nums) {
+        this.nums = nums;
+        if(nums == null) return null;
+        
+        return create(0, nums.length - 1);
+    }
+    
+    public TreeNode create(int low, int high){
+        if(low > high) return null;
+        int mid = (low + high)/2;
+        
+        TreeNode current = new TreeNode(nums[mid]);
+        current.left = create(low, mid - 1);
+        current.right = create(mid + 1, high);
+        return current;
+    }
